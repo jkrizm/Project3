@@ -1,0 +1,38 @@
+
+# the 2000s
+curl --request GET \
+  --output the2000s.json \
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DX4o1oenSJRJd \
+  --header 'Authorization: Bearer BQAHz_bHNFAonBAefBpl7Q62ul0tiH8KkzrkeHcwYcrzvsUXMMCtIivVTJrgIgsY62unRLUpEV1YTv13b4KxQH-rFHpquiOhZGTqB0DNJR2Xc22mn9Q'
+
+
+# the 1990s
+curl --request GET \
+  --output the1990s.json \
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DXbTxeAdrVG2l \
+  --header 'Authorization: Bearer BQAHz_bHNFAonBAefBpl7Q62ul0tiH8KkzrkeHcwYcrzvsUXMMCtIivVTJrgIgsY62unRLUpEV1YTv13b4KxQH-rFHpquiOhZGTqB0DNJR2Xc22mn9Q'
+
+
+# the 1980s
+curl --request GET \
+  --output the1980s.json \
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DX4UtSsGT1Sbe \
+  --header 'Authorization: Bearer BQAHz_bHNFAonBAefBpl7Q62ul0tiH8KkzrkeHcwYcrzvsUXMMCtIivVTJrgIgsY62unRLUpEV1YTv13b4KxQH-rFHpquiOhZGTqB0DNJR2Xc22mn9Q'
+
+# the 1970s
+curl --request GET \
+  --output the1970s.json \
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DWTJ7xPn4vNaz \
+  --header 'Authorization: Bearer BQAHz_bHNFAonBAefBpl7Q62ul0tiH8KkzrkeHcwYcrzvsUXMMCtIivVTJrgIgsY62unRLUpEV1YTv13b4KxQH-rFHpquiOhZGTqB0DNJR2Xc22mn9Q'
+
+# the 1960s
+curl --request GET \
+  --output the1960s.json \
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DXaKIA8E7WcJj \
+  --header 'Authorization: Bearer BQAHz_bHNFAonBAefBpl7Q62ul0tiH8KkzrkeHcwYcrzvsUXMMCtIivVTJrgIgsY62unRLUpEV1YTv13b4KxQH-rFHpquiOhZGTqB0DNJR2Xc22mn9Q'
+
+# the 1950s
+curl --request GET \
+  --output the1950s.json \
+  --url https://api.spotify.com/v1/playlists/37i9dQZF1DWSV3Tk4GO2fq \
+  --header 'Authorization: Bearer BQAHz_bHNFAonBAefBpl7Q62ul0tiH8KkzrkeHcwYcrzvsUXMMCtIivVTJrgIgsY62unRLUpEV1YTv13b4KxQH-rFHpquiOhZGTqB0DNJR2Xc22mn9Q'
