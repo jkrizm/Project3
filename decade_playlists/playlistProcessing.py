@@ -8,8 +8,8 @@ for i in range(len(decades)):
     curr_data = json.load(curr_file)
     id_str = ''
     j = 0
-    song_dict = {}
     for item in curr_data['tracks']['items']:
+        song_dict = {}
         print("\n" + str(decades[i])+"s")
         if j < 100:
             id_str += str(item['track']['id']) + ", "
