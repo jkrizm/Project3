@@ -1,5 +1,5 @@
 # Project3
-1. Created a Spotify account we could use to gather data from [Spotify's Web API] (https://developer.spotify.com/documentation/web-api)
+1. Created a Spotify account we could use to gather data from [Spotify's Web API](https://developer.spotify.com/documentation/web-api)
 2. Used cURL to retrieve out token and proceed to gather the following playlists (playlist ID's found through Spotify)
    i. All Out 50s
    ii. (need to add the rest)
