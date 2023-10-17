@@ -1,7 +1,7 @@
 import json
 
 decade_data =[]
-decade_files = ["decade_playlists/the1950s.json", 'decade_playlists/the1960s.json', 'decade_playlists/the1970s.json', 'decade_playlists/the1980s.json', 'decade_playlists/the1990s.json', 'decade_playlists/the2000s.json']
+decade_files = ["Playlist JSON Files & Processing Code/the1950s.json", 'Playlist JSON Files & Processing Code/the1960s.json', 'Playlist JSON Files & Processing Code/the1970s.json', 'Playlist JSON Files & Processing Code/the1980s.json', 'Playlist JSON Files & Processing Code/the1990s.json', 'Playlist JSON Files & Processing Code/the2000s.json']
 decades = [1950, 1960, 1970, 1980, 1990, 2000]
 for i in range(len(decades)):
     curr_file = open(decade_files[i])
@@ -12,10 +12,18 @@ for i in range(len(decades)):
         song_dict = {}
         print("\n" + str(decades[i])+"s")
         if j < 100:
-            id_str += str(item['track']['id']) + ", "
-            song_dict['id'] = str(item['track']['id'])
-            song_dict['name'] = str(item['track']['name'])
+            curr_track = item['track']
+            id_str += curr_track['id'] + ", "
+            song_dict['id'] = curr_track['id']
+            song_dict['song_name'] = curr_track['name']
+            song_dict['artist'] = curr_track['artists'][0]['name']
+            song_dict['pic_url'] = curr_track['album']['images'][0]['url']
+            song_dict['preview_url'] = curr_track['preview_url']
             song_dict['decade'] = decades[i]
+            if curr_track['album']['release_date_precision'] != 'year':
+                song_dict['release_year']  = curr_track['album']['release_date'].split('-')[0]
+            else:
+                song_dict['release_year'] = curr_track['album']['release_date']
             decade_data.append(song_dict)
         j += 1
         print(id_str)
