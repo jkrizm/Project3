@@ -1,0 +1,20 @@
+# source: https://www.sqlitetutorial.net/sqlite-import-csv/
+
+(base)  ~ % cd Project3
+(base)  % cd API
+(base)  % sqlite3 SpotifyDB
+SQLite version 3.40.1 2022-12-28 14:03:47
+Enter ".help" for usage hints.
+sqlite> .mode csv
+sqlite> .import final.csv spotify_data
+sqlite> .schema spotify_data
+sqlite> CREATE TABLE new_spotify_data(“index” INT PRIMARY KEY,
+id TEXT, song_name TEXT, artist TEXT, pic_url TEXT,
+ preview_url TEXT, decade INT, release_year INT, danceability FLOAT,
+ energy FLOAT, key INT, loudness FLOAT, mode INT,
+ speechiness FLOAT, acousticness FLOAT, instrumentalness FLOAT, liveness FLOAT,
+ valence FLOAT, tempo FLOAT, type TEXT, uri TEXT,
+ track_href TEXT, analysis_url TEXT, duration_ms INT, time_signature INT);
+sqlite> INSERT INTO new_spotify_data SELECT * FROM spotify_data;
+sqlite> DROP TABLE spotify_data;
+sqlite> ALTER TABLE new_spotify_data RENAME TO spotify_data;
