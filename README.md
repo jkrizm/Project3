@@ -18,5 +18,6 @@ index (primary key), id (spotify key), song_name, artist, pic_url, preview_url, 
    - The homepage displays a musical attribute dropdown, that when selected, populates ranges on a slider. Moving the slider to different positions leads to the sample song for that position in the range to begin playing. Next to the slider, the album cover, artist, and song name appear. While above the slider, the attribute and the value corresponding to the sample song appear. The definition that corresponds to the attribute becomes spotify green. There are also start and stop buttons to control the music manually.
    - The By Decade page displays histograms for each attribute within a decade, selected from a dropdown.
    - The By Musical Feature page displays a line plot with error bars to see how the mean and variance of a given musical feature changes across the decades.
+12. All files to run the website are in the folder called 'website'. This includes the final SpotifyDB.sqlite file. All other folders are steps along the way in building up the final product. 
    
 
