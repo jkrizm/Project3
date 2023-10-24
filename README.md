@@ -1,6 +1,6 @@
 # Project3
 1. Created a Spotify account we could use to gather data from [Spotify's Web API](https://developer.spotify.com/documentation/web-api). This gave us the client ID and client secret that we could use to get our access token (using cURL command).
-3. Used cURL to retrieve to gather the following playlists (playlist ID's found through Spotify)
+3. Used cURL (with help from Mark and Paveen) to retrieve to gather the following playlists (playlist ID's found through Spotify)
    i. All Out 50s
    ii. All Out 60s
    iii. All out 70s
@@ -18,6 +18,7 @@ index (primary key), id (spotify key), song_name, artist, pic_url, preview_url, 
    - The homepage displays a musical attribute dropdown, that when selected, populates ranges on a slider. Moving the slider to different positions leads to the sample song for that position in the range to begin playing. Next to the slider, the album cover, artist, and song name appear. While above the slider, the attribute and the value corresponding to the sample song appear. The definition that corresponds to the attribute becomes spotify green. There are also start and stop buttons to control the music manually.
    - The By Decade page displays histograms for each attribute within a decade, selected from a dropdown.
    - The By Musical Feature page displays a line plot with error bars to see how the mean and variance of a given musical feature changes across the decades.
-12. All files to run the website are in the folder called 'website'. This includes the final SpotifyDB.sqlite file. All other folders are steps along the way in building up the final product. 
+12. All files to run the website are in the folder called 'website'. This includes the final SpotifyDB.sqlite file and images files for the spotify logo in the nav header and the icon.png for the tab icon image. All other folders are steps along the way in building up the final product. 
    
 
+This is in an effort to be fully transparent about any additional help received on this project:  There are a couple of places in our scripts that we got help by looking at submissions on stack overflow. These places are indicated in the code. Also, there were a couple of instances where I (Jen) had sought some guidance from AskBCS, but no to minimal help was provided. Two were because I was having trouble passing a returned variable in javascript to another function -- the first person ended the chat when I said it was for the project, the second person answered the question I had, which was to doublecheck how to pass a variable from one function to another. There answer confirmed that I was doing it correctly and allowed me to troubleshoot other ways to get the variable to pass. The third time was when I wanted confirmation about how to connect multiple pages that were being called from a flask app. They sent me a bunch of links to their own work that was not helpful and did not change how I was doing things. Also, with respect to passing variables between functions, I had posted a question about it on stack overflow seeking help, only to realize about 20 minutes later that I made a stupid error. 
